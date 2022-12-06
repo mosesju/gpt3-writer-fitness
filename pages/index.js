@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+
 
 const Home = () => {
 
@@ -81,7 +81,7 @@ const Home = () => {
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>build by Julian Moses</p>
           </div>
         </a>
       </div>

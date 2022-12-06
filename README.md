@@ -1,3 +1,4 @@
-# buildspace 
+# Julian Moses 
 ### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project.
+
+this is a project to learn how to use the GPT-3 api and build a basic web app that helps inspire people to get off their asses and workout
