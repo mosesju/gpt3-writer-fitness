@@ -5,7 +5,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const basePromptPrefix = "Write a motivational sentence by David Goggins ";
+const basePromptPrefix = "Write a motivational sentence by David Goggins that is degrading and makes the person feel like they have to do it for their own self respect:";
 const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
@@ -13,7 +13,7 @@ const generateAction = async (req, res) => {
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
-    temperature: 0.7,
+    temperature: 0.6,
     max_tokens: 250,
   });
   
