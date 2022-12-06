@@ -5,7 +5,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const basePromptPrefix = "Write a motivational sentence by David Goggins that is degrading and makes the person feel like they have to do it for their own self respect:";
+const basePromptPrefix = "Write a motivational sentence to go workout by David Goggins that is degrading and makes the person feel like they have to do it for their own self respect:";
 const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
